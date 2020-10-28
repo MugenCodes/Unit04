@@ -17,3 +17,19 @@
         }
     }    
 }
+
+//Flex Basis
+@mixin column-flexb($map) {
+    @each $col, $percent in $map {
+        &-#{$col} {
+            flex-basis: $percent;
+        }
+    }    
+}
+
+//Center
+@mixin center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
